@@ -1,0 +1,45 @@
+header {
+    font-size: large;
+    color: blue;
+    text-decoration: underline dotted;
+
+}
+
+h2 {
+    color: blue;
+    text-decoration: overline wavy;
+
+    color: rgba(205, 34, 178, 0.4);
+}
+
+nav{
+    font-size: large;
+    color: deeppink;
+}
+
+
+
+p {
+    color: darkgreen;
+    color: #F45F13;
+    text-decoration: underline dashed;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    font-size: 90%;
+
+}
+
+.class1{
+    color: chartreuse;
+}
+
+
+#id1{
+    color: blue;
+}
+
+code{
+    color: crimson;
+}
