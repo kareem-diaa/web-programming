@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task Manager Dashboard</h1>
+
+    <button id="themeToggle">Toggle Dark/Light Theme</button>
+
+    <form id="taskForm">
+        <label for="taskTitle">Title: </label>
+        <input type="text" id="taskTitle" placeholder="Enter Title" required>
+        <label for="taskDesc">Description: </label>
+        <input type="text" id="taskDesc" placeholder="Enter Description" required>
+        <label for="taskPriority">Choose Priority: </label>
+        <select id="taskPriority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <label>
+    Filter by Priority:
+    <select id="filterPriority">
+        <option value="All">All</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+    </label>
+
+    <ul id="taskList">
+        
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

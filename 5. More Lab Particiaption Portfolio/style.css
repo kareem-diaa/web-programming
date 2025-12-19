@@ -1,0 +1,227 @@
+/*
+h1 {
+    font-size: 200%;
+    color: blue;
+    text-decoration: underline dotted;
+    border-color: #F45F13;
+    border-style: dashed;
+    border-style: solid;
+    border-width: 5px 7px 8px 10px;
+    border-bottom: #F45F13 solid 5px;
+    border-top: red dashed 10px;
+    border:  red 15px dashed;
+    border-bottom: black 20px solid;
+    padding: 15px;
+    width: 50%;
+    height: 50%;
+    min-width: 400px;
+    padding: 50px;
+    margin: 50px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding: 50px 5px;
+    margin: 100px 50px 60px 0px;
+
+}    */
+
+
+h2 {
+    color: blue;
+    text-decoration: overline wavy;
+
+    color: rgba(205, 34, 178, 0.4);
+}
+
+nav {
+    font-size: large;
+    color: deeppink;
+}
+
+
+/* 
+p {
+    color: darkgreen;
+    color: #F45F13;
+    text-decoration: underline dashed;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    font-size: 90%;
+
+} */
+
+.class1 {
+    color: chartreuse;
+}
+
+
+#id1 {
+    color: blue;
+}
+
+
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+a:hover {
+    color: aqua;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+.link1:link {
+    color: black;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+a:active {
+    color: purple;
+    text-decoration: underline;
+
+}
+
+body {
+    background-image: url("assets/picture2.png");
+    /* background-size: cover; */
+    background-repeat: repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inlined {
+    display: inline;
+}
+
+.blocked {
+    display: block;
+
+}
+
+code {
+    color: crimson;
+    /* visibility: hidden; */
+    display: inline-block;
+    display: none;
+}
+
+
+
+.huge-text {
+    color: aqua;
+    border: solid red 5px;
+    height: 50px;
+    overflow: auto;
+    /* overflow: scroll; */
+    /* overflow: visible; */
+}
+
+/* Childs */
+
+.child1 {
+    background-color: coral;
+    /* margin: 10px; */
+}
+
+.child2 {
+    background-color: blue;
+    /* margin: 10px; */
+}
+
+.child3 {
+    background-color: green;
+    /* margin: 10px; */
+}
+
+.child4 {
+    background-color: rgb(0, 217, 255);
+    /* margin: 10px; */
+
+}
+
+
+/* Flex box */
+/* ------------------------------------------------------------------------------ */
+.container {
+    background-color: blueviolet;
+    margin: 30px;
+    padding: 10px;
+    border: solid rgb(40, 213, 92) 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    flex-flow: row wrap;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.container div {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 242, 255, 0.6);
+    color: navy;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    ;
+}
+
+/* Grid */
+/* ------------------------------------------------------------------------------ */
+
+.grid-container {
+    background: white;
+    width: 700px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar content1"
+        "footer footer";
+    row-gap: 8px;
+    column-gap: 8px;
+    padding: 8px;
+}
+
+.header {
+    text-align: center;
+    grid-area: header;
+    background: yellow;
+}
+
+.content {
+    text-align: center;
+    grid-area: content1;
+    background: brown;
+}
+
+.sidebar {
+    text-align: center;
+    grid-area: sidebar;
+    background: rgb(23, 200, 0);
+}
+
+.footer {
+    text-align: center;
+    grid-area: footer;
+    color: rgb(184, 92, 0);
+    background: rgb(10, 10, 48);
+}
